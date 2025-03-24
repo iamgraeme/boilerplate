@@ -24,3 +24,8 @@ This starter pack is powered by **Expo SDK 52** and combines the best tools in t
 - 🦺 Unit testing with Jest and React Testing Library
 - 🧪 End-to-end testing with Detox
 - 🗂 Optimized VSCode setup with recommended extensions
+
+### Preinstalled Expo Packages
+- 📳 [Expo Haptics](https://docs.expo.dev/versions/latest/sdk/haptics/) - Add tactile feedback
+- 📍 [Expo Location](https://docs.expo.dev/versions/latest/sdk/location/) & [Expo Maps](https://docs.expo.dev/versions/latest/sdk/map-view/) - Location services and map integration
+- 📋 [Expo Clipboard](https://docs.expo.dev/versions/latest/sdk/clipboard/) - Copy and paste functionality
