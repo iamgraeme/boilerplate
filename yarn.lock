@@ -5298,6 +5298,16 @@ expo-linking@~7.0.5:
     expo-constants "~17.0.5"
     invariant "^2.2.4"
 
+expo-location@~18.0.8:
+  version "18.0.8"
+  resolved "https://registry.yarnpkg.com/expo-location/-/expo-location-18.0.8.tgz#0975bb53a8d3d4138c84f3ba0f02e7b92ab66b53"
+  integrity sha512-4PfkFtCeKCcDFa8aX2HcNeoEvc6SxZHHs3fhEDWPuIZU9MmIWYe9iPYynF4Qj0uK+sXYe+ALc2wIXbT8zrp6BQ==
+
+expo-maps@^0.7.3:
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/expo-maps/-/expo-maps-0.7.3.tgz#3df5de8227c8cde0884ea3efd838c916ce32dabc"
+  integrity sha512-M8m5kMLuw1WpJ5pVbp18YOYUP8NnvhvXqPkgyUlIbGK1szkxs1U/zaKgV4PPOzOeMBdYK0nCcwrIQlj0bRMoag==
+
 expo-modules-autolinking@2.0.8:
   version "2.0.8"
   resolved "https://registry.yarnpkg.com/expo-modules-autolinking/-/expo-modules-autolinking-2.0.8.tgz#b00c10ebb589ce2220548bbaee4865db1cf1f1f7"
