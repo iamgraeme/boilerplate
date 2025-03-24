@@ -1,0 +1,47 @@
+name: Update Changelog
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+jobs:
+  update-changelog:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Git user
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+      - name: Generate Changelog
+        run: |
+          # Create CHANGELOG.md if it doesn't exist
+          if [ ! -f CHANGELOG.md ]; then
+            echo "# Changelog\n\nAll notable changes to this project will be documented in this file.\n" > CHANGELOG.md
+          fi
+
+          # Get PR title and number
+          PR_TITLE="${{ github.event.pull_request.title }}"
+          PR_NUMBER="${{ github.event.pull_request.number }}"
+          PR_URL="${{ github.event.pull_request.html_url }}"
+          PR_AUTHOR="${{ github.event.pull_request.user.login }}"
+          CURRENT_DATE=$(date +"%Y-%m-%d")
+
+          # Prepare the new entry
+          NEW_ENTRY="## [PR #${PR_NUMBER}](${PR_URL}) - ${CURRENT_DATE}\n\n${PR_TITLE} (by @${PR_AUTHOR})\n"
+
+          # Add the new entry after the header
+          sed -i "4i\\${NEW_ENTRY}" CHANGELOG.md
+
+      - name: Commit and push changes
+        run: |
+          git add CHANGELOG.md
+          git commit -m "Update CHANGELOG.md for PR #${{ github.event.pull_request.number }}"
+          git push
