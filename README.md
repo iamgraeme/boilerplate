@@ -1,6 +1,6 @@
 # Boilerplate and Starter for React Native, Expo, NativeWind and TypeScript
 
-🚀 Boilerplate and Starter for React Native, Expo, NativeWind and TypeScript ⚡️ Made with developer experience first: React Native, Expo, TypeScript, ESLint, Prettier, Husky, Lint-Staged, Jest, Detox, VSCode, NativeWind.
+🚀 Boilerplate and Starter for React Native, Expo, NativeWind and TypeScript ⚡️ Made with developer experience first: React Native, Expo (52), TypeScript, ESLint, Prettier, Husky, Lint-Staged, Jest, Detox, VSCode, NativeWind.
 
 ### Features
 
