@@ -1,6 +1,10 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+## [PR #5](https://github.com/iamgraeme/boilerplate/pull/5) - 2025-03-27
+
+Bump @babel/runtime from 7.26.9 to 7.27.0 (by @dependabot[bot])
+
 ## [PR #2](https://github.com/iamgraeme/boilerplate/pull/2) - 2025-03-24
 
 Update README (by @iamgraeme)
