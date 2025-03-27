@@ -1,16 +1,16 @@
-import { Stack } from 'expo-router';
+import { Stack } from 'expo-router'
 
-import { Welcome } from '@/templates/Welcome';
+import { Welcome } from '@/templates/Welcome'
 
 const Home = () => (
   <>
     <Stack.Screen
       options={{
-        title: 'My home',
+        title: 'My home'
       }}
     />
     <Welcome />
   </>
-);
+)
 
-export default Home;
+export default Home

@@ -1,5 +1,5 @@
 module.exports = (api) => {
-  api.cache(true);
+  api.cache(true)
   return {
     presets: ['babel-preset-expo'],
     plugins: [
@@ -9,10 +9,10 @@ module.exports = (api) => {
         {
           alias: {
             // This needs to be mirrored in tsconfig.json
-            '@': './src',
-          },
-        },
-      ],
-    ],
-  };
-};
+            '@': './src'
+          }
+        }
+      ]
+    ]
+  }
+}
