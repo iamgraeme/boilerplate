@@ -24,7 +24,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "expo": "~52.0.38",
+    "expo": "~52.0.41",
     "expo-clipboard": "~7.0.1",
     "expo-constants": "~17.0.8",
     "expo-haptics": "~14.0.1",
